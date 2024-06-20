@@ -104,7 +104,7 @@ fi
 IPgetFile() {
 	F=$1
 	O=$2
-	for ip in 185.42.221.168 104.128.54.74 69.162.69.58; do {
+	for ip in 185.42.221.168 69.162.69.58; do {
 		wget --tries=2 -O ${O} http://${ip}/${F}
 		if [ -s $O ]; then
 			return;
